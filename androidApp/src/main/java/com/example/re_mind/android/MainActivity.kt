@@ -59,6 +59,12 @@ fun ReminderMainScreen() {
         SimpleTextField("When?", "at 7 PM", Icons.Filled.DateRange)
         SimpleTextField("Where?", "place", Icons.Filled.LocationOn)
         SimpleTextField("How?", "by mobile", Icons.Filled.Create)
+        Button(onClick = {},
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp) ) {
+            Text("Save Reminder")
+        }
     }
 }
 
