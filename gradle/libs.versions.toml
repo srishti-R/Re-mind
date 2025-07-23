@@ -3,7 +3,16 @@ agp = "8.7.3"
 kotlin = "2.0.0"
 compose = "1.5.4"
 compose-material3 = "1.1.2"
+compose-maps = "2.11.2"
 androidx-activityCompose = "1.8.0"
+playServicesLocation = "21.3.0"
+playServicesMaps = "18.2.0"
+ksp = "2.0.0-1.0.22"
+navigation = "2.7.7"
+accompanist = "0.32.0"
+coroutinesPlay = "1.10.2"
+room = "2.7.2"
+work-manager = "2.10.2"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -13,6 +22,18 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+compose-maps = { module = "com.google.maps.android:maps-compose", version.ref = "compose-maps" }
+accompanist = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+navigation = {group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation"}
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+kotlin-coroutines-play = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "coroutinesPlay"}
+room-runtime = {module = "androidx.room:room-runtime", version.ref = "room"}
+room-ktx = {module = "androidx.room:room-ktx", version.ref = "room"}
+room-compiler = {module = "androidx.room:room-compiler", version.ref = "room"}
+room-test = {module = "androidx.room:room-testing", version.ref = "room"}
+work-runtime = {module = "androidx.work:work-runtime-ktx", version.ref = "work-manager"}
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -21,3 +42,4 @@ kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+ksp = {id = "com.google.devtools.ksp", version.ref = "ksp"}

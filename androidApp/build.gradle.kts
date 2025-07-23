@@ -2,15 +2,16 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.ksp)
 }
 
 android {
     namespace = "com.example.re_mind.android"
-    compileSdk = 34
+    compileSdk = 35
     defaultConfig {
         applicationId = "com.example.re_mind.android"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
     }
@@ -42,5 +43,17 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.play.services.maps)
+    implementation (libs.play.services.location)
+    implementation (libs.navigation)
+    implementation(libs.compose.maps)
+    implementation (libs.accompanist)
+    implementation (libs.kotlin.coroutines.play)
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+    implementation (libs.work.runtime)
+
+    testImplementation(libs.room.test)
     debugImplementation(libs.compose.ui.tooling)
 }

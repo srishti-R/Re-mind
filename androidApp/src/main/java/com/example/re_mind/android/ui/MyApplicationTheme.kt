@@ -1,4 +1,4 @@
-package com.example.re_mind.android
+package com.example.re_mind.android.ui
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
